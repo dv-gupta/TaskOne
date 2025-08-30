@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions } from 'react-native';
 
@@ -8,15 +6,14 @@ const { width, height } = Dimensions.get('window');
 const IntroductionScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-    
+
       <Image
-        pointerEvents="none"                    
+        pointerEvents="none"
         source={require('../../assets/images/Task1/women.png')}
         style={styles.image}
         resizeMode="contain"
       />
 
-    
       <View style={styles.infoBox}>
         <Text style={styles.title}>
           Hi, I am your fashion advisor.Let's{"\n"}
@@ -24,12 +21,11 @@ const IntroductionScreen = ({ navigation }) => {
           mix & match fashion avatar.
         </Text>
 
-
         <View style={styles.arrowWrapper}>
           <TouchableOpacity
             style={styles.arrowButton}
             onPress={() => {
-              console.log('Arrow pressed');     
+              console.log('Arrow pressed');
               navigation.navigate('FaceUploadOne');
             }}
           >
@@ -76,8 +72,8 @@ const styles = StyleSheet.create({
   arrowWrapper: {
     marginTop: 15,
     alignItems: 'flex-end',
-    zIndex: 1,       
-    elevation: 2,   
+    zIndex: 1,
+    elevation: 2,
   },
   arrowButton: {
     backgroundColor: '#000',
@@ -93,3 +89,7 @@ const styles = StyleSheet.create({
     tintColor: '#fff',
   },
 });
+
+
+/// TASK2
+

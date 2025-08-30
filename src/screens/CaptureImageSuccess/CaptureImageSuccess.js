@@ -40,7 +40,6 @@ const CaptureImageSuccess = ({ route, navigation }) => {
       ])
     ).start();
 
-    // Progress bar animation
     animationRef.current = Animated.timing(progress, {
       toValue: 1,
       duration: 3000,

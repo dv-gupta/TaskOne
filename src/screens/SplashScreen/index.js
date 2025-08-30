@@ -22,6 +22,8 @@ const SplashScreen = ({navigation}) => {
       useNativeDriver: false,
     }).start(() => {
       navigation.replace('Introduction');
+      // navigation.replace('TaskTwoScreen');
+
     });
   }, [navigation, progress]);
 
@@ -32,17 +34,17 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      {/* Branded Splash Image */}
+      
       <Image
         source={require('../../assets/images/Task1/splash.png')}
         style={styles.logo}
         resizeMode="contain"
       />
 
-      {/* Loading Text */}
+   
       <Text style={styles.loadingText}>Loading brands...</Text>
 
-      {/* Progress Bar */}
+  
       <View style={styles.progressContainer}>
         <Animated.View style={[styles.progressBar, {width: progressWidth}]} />
       </View>
@@ -66,7 +68,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 16,
     fontWeight: '500',
-    color: '#000', // Black color text
+    color: '#000',
   },
   progressContainer: {
     marginTop: 10,

@@ -10,11 +10,11 @@ import { useColorScheme } from 'react-native';
 // Screens
 import SplashScreen from '../screens/SplashScreen';
 import IntroductionScreen from '../screens/IntroductionScreen/introductionScreen';
+import TaskTwoScreen from '../screens/TaskTwoScreen/TaskTwoScreen';
 import FaceUploadOne from '../screens/FaceUploadOne/FaceUploadOne';
 import FaceUploadSuccess from '../screens/FaceUploadSuccess/FaceUploadSuccess';
 import CaptureImageSuccess from '../screens/CaptureImageSuccess/CaptureImageSuccess';
 
-// Navigation Ref (optional)
 import { navigationRef } from '../utils/RootNavigation';
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +33,7 @@ export default function Navigation() {
         <Stack.Screen name="FaceUploadOne" component={FaceUploadOne} />
         <Stack.Screen name='FaceUploadSuccess' component={FaceUploadSuccess}/>
         <Stack.Screen name='CaptureImageSuccess' component={CaptureImageSuccess}/>
+        <Stack.Screen name='TaskTwoScreen' component={TaskTwoScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
